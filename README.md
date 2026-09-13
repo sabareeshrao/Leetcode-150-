@@ -5,41 +5,42 @@
 **Day 001 / 300**  
 **Current level:** Beginner  
 **Language:** Python  
+**Explanation style:** Telugu in English font  
 **Next planned day:** Day 002
 
-This repository is the progress record for a gradual LeetCode 150 and FAANG interview-preparation journey.
+Ee repository mana gradual LeetCode 150 + FAANG interview preparation journey ki progress record.
 
-The rule is simple:
+Mana main rule:
 
 **tiny task -> tiny task -> pattern understanding -> LeetCode problem -> variation -> independent solve**
 
-We will not jump directly into a LeetCode problem before its prerequisites feel comfortable.
+Prerequisites comfortable ga anipinche varaku direct ga LeetCode problem meeda jump cheyyamu.
 
 ---
 
-# Day 001 - Meet the List
+# Day 001 - List ni Ardham Chesukundam
 
-## Today's goal
+## Eeroju goal
 
-Understand three ideas only:
+Eeroju kevalam 3 concepts meeda focus chestham:
 
-1. A Python list can hold multiple values.
-2. A `for` loop can visit those values one at a time.
-3. An `if` statement can check a condition while we scan the list.
+1. Python `list` ante multiple values ni oka place lo store cheyyadam.
+2. `for` loop list lo unna values ni okkokati visit chestundi.
+3. `if` statement tho oka condition ni check cheyyachu.
 
-No LeetCode problem today.
+Eeroju direct LeetCode problem ledu.
 
-Our long-term destination from these fundamentals includes problems such as **Two Sum**, but today we only build the foundation.
+Future lo **Two Sum** lanti problems solve cheyyadaniki kavalsina basic foundation ni ippudu build chestunnam.
 
 ---
 
-## Day 1.1 - Read a list
+## Day 1.1 - List ni chuddam
 
 ```python
 numbers = [4, 7, 2, 9, 5]
 ```
 
-Think of it as five boxes:
+Idi 5 boxes laga imagine cheyyi:
 
 ```text
 Index:   0  1  2  3  4
@@ -48,17 +49,17 @@ Value:   4  7  2  9  5
 
 Mini questions:
 
-- What is the first value?
-- What is the value at index `3`?
-- How many values are in the list?
+- First value enti?
+- Index `3` lo unna value enti?
+- Total enni values unnayi?
 
-Do these mentally first.
+Code run cheyyakunda mundu mentally answer cheyyadaniki try cheyyi.
 
 ---
 
-## Day 1.2 - Visit every value
+## Day 1.2 - Prathi value ni visit cheyyadam
 
-Run this code:
+Ee code chudu:
 
 ```python
 numbers = [4, 7, 2, 9, 5]
@@ -77,23 +78,23 @@ Expected output:
 5
 ```
 
+`for number in numbers` ante list lo unna prathi value okkokatiga `number` variable loki vastundi.
+
 ### Mini Task 1
 
-Change the list to:
+List ni ila marchu:
 
 ```python
 numbers = [10, 20, 30]
 ```
 
-Without running the program first, predict the output.
+Program run cheyyakunda output enti ani mundu predict cheyyi.
 
-Then run it and check yourself.
+Tarvata run chesi verify cheyyi.
 
 ---
 
-## Day 1.3 - Check each value
-
-Study this:
+## Day 1.3 - Condition check cheyyadam
 
 ```python
 numbers = [4, 7, 2, 9, 5]
@@ -103,19 +104,19 @@ for number in numbers:
         print(number)
 ```
 
-Before running it, predict what will be printed.
+Ikkada Python prathi number ni chusi `5` kanna pedda number aa kaada ani check chestundi.
+
+Run cheyyakunda mundu output predict cheyyi.
 
 ### Mini Task 2
 
-Modify the condition so that it prints only numbers smaller than `5`.
+Condition ni marchi `5` kanna chinna numbers matrame print cheyyi.
 
-Do not change the list.
+List ni matram marchakudadhu.
 
 ---
 
-## Day 1.4 - Count while scanning
-
-Starter code:
+## Day 1.4 - Count cheyyadam
 
 ```python
 numbers = [4, 7, 2, 9, 5]
@@ -128,25 +129,35 @@ for number in numbers:
 print(count)
 ```
 
-### Mini Task 3
+`count = 0` tho start chestham.
 
-Before running it, answer:
+Condition true aina prathi sari:
 
-```text
-What should count contain at the end?
+```python
+count = count + 1
 ```
 
-Then run it.
+ante count ni 1 increase chestham.
+
+### Mini Task 3
+
+Code run cheyyakunda mundu cheppu:
+
+```text
+Final count entha untundi?
+```
+
+Tarvata run chesi check cheyyi.
 
 ### Mini Task 4
 
-Change the program so it counts numbers smaller than `5` instead.
+Program ni marchi `5` kanna chinna numbers enni unnayo count cheyyi.
 
 ---
 
-## Day 1.5 - Search for one number
+## Day 1.5 - Oka number ni search cheyyadam
 
-Complete this yourself:
+Ee starter code ni complete cheyyi:
 
 ```python
 numbers = [4, 7, 2, 9, 5]
@@ -154,7 +165,7 @@ target = 9
 found = False
 
 for number in numbers:
-    # Your code here
+    # Nee code ikkada
 
 print(found)
 ```
@@ -162,29 +173,29 @@ print(found)
 Goal:
 
 ```text
-If 9 exists in the list -> True
-If 9 does not exist -> False
+9 list lo unte -> True
+9 list lo lekapothe -> False
 ```
 
-After you get it working, change:
+Adi working ayyaka:
 
 ```python
 target = 100
 ```
 
-and predict the result before running it.
+ani marchi output mundu predict cheyyi.
 
 ---
 
 ## Day 1 Challenge
 
-Use this list:
+Ee list use cheyyi:
 
 ```python
 numbers = [8, 3, 11, 4, 7]
 ```
 
-Write a small program that counts how many numbers are greater than `6`.
+`6` kanna pedda numbers enni unnayo count chese small program rayi.
 
 Expected answer:
 
@@ -192,52 +203,53 @@ Expected answer:
 3
 ```
 
-Try to write it without copying the earlier program.
+Mundhu examples ni direct ga copy cheyyakunda own ga try cheyyi.
 
 ---
 
-## What Day 1 is secretly teaching
+## Day 1 lo manam actual ga em nerchukuntunnam?
 
-Today is already building the basic operation used in hundreds of interview problems:
+Interview problems lo chala sarlu basic flow ide:
 
 ```text
-SCAN AN ARRAY
-      |
-      v
-LOOK AT ONE VALUE
-      |
-      v
-CHECK A CONDITION
-      |
-      v
-UPDATE SOME INFORMATION
+ARRAY NI SCAN CHEYYI
+        |
+        v
+OKA VALUE NI CHUDU
+        |
+        v
+CONDITION CHECK CHEYYI
+        |
+        v
+SOME INFORMATION UPDATE CHEYYI
 ```
 
-Later this same idea becomes:
+Later ide concept ila grow avutundi:
 
 - searching
 - counting
-- finding maximum/minimum
+- maximum/minimum finding
 - duplicate detection
 - Two Sum
 - sliding window
-- hash-map problems
-- many tree and graph traversals
+- hash map problems
+- tree traversals
+- graph traversals
 
 ---
 
 ## Day 1 Completion Check
 
-Before moving to Day 2, you should be able to explain in your own words:
+Day 2 ki velladaniki mundu nee own words lo explain cheyyagalagali:
 
-- what a list is
-- what an index is
-- what a `for` loop does
-- what an `if` statement does
-- how to count matching values
-- how to search for a value by scanning the list
+- list ante enti
+- index ante enti
+- `for` loop em chestundi
+- `if` statement em chestundi
+- matching values ni ela count chestham
+- list ni scan chesi oka value ni ela search chestham
 
-You do **not** need to memorize clever algorithms yet.
+Ippude clever algorithms memorize cheyyalsina avasaram ledu.
 
 ---
 
@@ -249,4 +261,4 @@ You do **not** need to memorize clever algorithms yet.
 
 ## Daily Git Rule
 
-Each learning day gets its own Git commit. Future days should inspect the latest repository state and continue from the highest completed/started day rather than restarting the syllabus.
+Prathi learning day ki oka Git commit untundi. Future lo ee journey ni vere chat lo continue chesina, latest repository state ni inspect chesi highest completed/started day nundi continue cheyyali.
