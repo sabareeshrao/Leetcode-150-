@@ -2,7 +2,7 @@
 
 **Language:** Java  
 **Level:** Beginner  
-**Status:** STARTED  
+**Status:** COMPLETE  
 **LeetCode problem today:** None intentionally
 
 ## Question 1
@@ -87,4 +87,4 @@ Rules:
 - do not use `Collections`
 - do not use any built-in min/max helper
 
-No solution is included in this file.
+Solution file: `day-003/Day3Solution.java`
