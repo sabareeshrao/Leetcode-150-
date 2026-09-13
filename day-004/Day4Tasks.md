@@ -2,7 +2,7 @@
 
 **Language:** Java  
 **Level:** Beginner  
-**Status:** STARTED  
+**Status:** COMPLETE  
 **LeetCode problem today:** None intentionally
 
 ## Question 1
@@ -89,4 +89,6 @@ Rules:
 - do not use `Arrays.stream()`
 - do not use any built-in sum helper
 
-No solution is included in this file.
+## Solution
+
+Solution file: `day-004/Day4Solution.java`
