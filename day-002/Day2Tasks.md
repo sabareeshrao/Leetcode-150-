@@ -5,21 +5,7 @@
 **Status:** STARTED  
 **LeetCode problem today:** None intentionally
 
-## Why Day 2 exists
-
-On Day 1, you learned how to scan array values.
-
-Today you learn how to scan an array while also knowing **where each value is located**.
-
-This matters because many LeetCode problems eventually ask you to return an **index**, not just a value. Two Sum is one important example later.
-
-Do not use `Arrays.asList()`, streams, or built-in search helpers today. The goal is to understand the loop yourself.
-
----
-
-## Day 2.1 - Understand the normal `for` loop
-
-Start with:
+## Day 2.1 - Predict the indexes
 
 ```java
 int[] numbers = {4, 7, 2, 9, 5};
@@ -29,37 +15,27 @@ for (int i = 0; i < numbers.length; i++) {
 }
 ```
 
-### Mini Task 1
+### Question 1
 
-Before running the code, predict exactly what it prints.
+Before running the code, write the exact output.
 
-Then run it and verify your prediction.
+### Question 2
 
-Question to answer in your own words:
-
-```text
-What does i represent?
-```
+What does `i` represent in this loop?
 
 ---
 
-## Day 2.2 - Use an index to access a value
+## Day 2.2 - Print index and value
 
-Study this line:
+Use:
 
 ```java
-numbers[i]
+int[] numbers = {4, 7, 2, 9, 5};
 ```
 
-It means:
+### Question 3
 
-```text
-Give me the value stored at index i.
-```
-
-### Mini Task 2
-
-Using the same array, write a loop that prints this:
+Write one loop that prints:
 
 ```text
 Index 0 -> 4
@@ -69,15 +45,17 @@ Index 3 -> 9
 Index 4 -> 5
 ```
 
-Do not write five separate `System.out.println()` statements.
+Rules:
 
-Use one loop.
+- use a normal `for` loop
+- use `numbers[i]`
+- do not write five separate print statements
 
 ---
 
-## Day 2.3 - Search and remember the index
+## Day 2.3 - Find the index of a target
 
-Use this starter code:
+Complete this code:
 
 ```java
 int[] numbers = {4, 7, 2, 9, 5};
@@ -91,27 +69,13 @@ for (int i = 0; i < numbers.length; i++) {
 System.out.println(targetIndex);
 ```
 
-### Mini Task 3
+### Question 4
 
-Complete the loop so that `targetIndex` becomes the index where `9` is found.
-
-Expected output:
-
-```text
-3
-```
-
-Important idea:
-
-```text
--1 = not found yet
-```
-
-Do not worry about whether `-1` is the only possible design. We are using it because it makes the idea easy to see.
+Write the missing code so the program stores the index of `9` in `targetIndex`.
 
 ---
 
-## Day 2.4 - Test the missing case
+## Day 2.4 - Missing target
 
 Change only:
 
@@ -119,33 +83,29 @@ Change only:
 int target = 100;
 ```
 
-### Mini Task 4
+### Question 5
 
-Before running the code, predict the final value of `targetIndex`.
-
-Then run it.
-
-You should understand why the result stays unchanged when no match is found.
+Without running the program first, what will `targetIndex` contain at the end?
 
 ---
 
 ## Day 2.5 - Stop after finding the target
 
-Return to:
+Use `target = 9` again.
 
-```java
-int target = 9;
-```
+### Question 6
 
-### Mini Task 5
+Modify your solution so the loop stops immediately after finding the target.
 
-After finding the target and storing its index, add:
+Use:
 
 ```java
 break;
 ```
 
-Then explain in one sentence what `break` does here.
+### Question 7
+
+In one sentence, what does `break` do in your program?
 
 ---
 
@@ -158,13 +118,9 @@ int[] numbers = {8, 3, 11, 4, 7};
 int target = 11;
 ```
 
-Write a program that finds the index of `11`.
+### Question 8
 
-Expected output:
-
-```text
-2
-```
+Write a complete Java program that finds the index of `11`.
 
 Rules:
 
@@ -174,46 +130,4 @@ Rules:
 - use `break` after finding the target
 - do not use a built-in search method
 
----
-
-## What Day 2 is teaching
-
-```text
-INDEX i
-   |
-   v
-numbers[i]
-   |
-   v
-CHECK THE VALUE
-   |
-   v
-REMEMBER THE INDEX
-```
-
-Day 1 taught:
-
-```text
-What is the value?
-```
-
-Day 2 adds:
-
-```text
-Where is the value?
-```
-
-That distinction will become important when we eventually reach problems that return positions, especially Two Sum.
-
-## Day 2 Completion Check
-
-Before asking for the Day 2 solution, you should be able to explain:
-
-- why Java arrays start at index `0`
-- what `i` means in `for (int i = 0; i < numbers.length; i++)`
-- what `numbers[i]` means
-- why `targetIndex` starts at `-1`
-- how to store an index when a value is found
-- what `break` does
-
-Do not move to nested loops yet. That comes after this index idea feels comfortable.
+Do not check the solution yet. Try all questions first.
