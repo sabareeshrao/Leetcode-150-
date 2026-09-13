@@ -2,11 +2,11 @@
 
 ## Current Progress
 
-**Day 003 / 300**  
+**Day 004 / 300**  
 **Current level:** Beginner  
 **Language:** Java  
 **Explanation style:** English only  
-**Next planned day:** Day 004
+**Next planned day:** Day 004 solution, only when requested
 
 This repository is the progress record for a gradual LeetCode 150 + FAANG interview preparation journey.
 
@@ -23,6 +23,7 @@ We will not jump directly into a LeetCode problem until the required fundamental
 | 001 | Java arrays, scanning, conditions, counting, search | None intentionally | COMPLETE |
 | 002 | Index-based traversal, target index, break | None intentionally | COMPLETE |
 | 003 | Largest value, smallest value, and their indexes | None intentionally | COMPLETE |
+| 004 | Array totals and accumulation | None intentionally | STARTED |
 
 ## Day Files
 
@@ -31,6 +32,7 @@ We will not jump directly into a LeetCode problem until the required fundamental
 - Day 2 solution: `day-002/Day2Solution.java`
 - Day 3 tasks: `day-003/Day3Tasks.md`
 - Day 3 solution: `day-003/Day3Solution.java`
+- Day 4 tasks: `day-004/Day4Tasks.md`
 
 ## Learning Workflow
 
