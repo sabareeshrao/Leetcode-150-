@@ -2,7 +2,7 @@
 
 **Language:** Java  
 **Level:** Beginner  
-**Status:** STARTED  
+**Status:** COMPLETE  
 **LeetCode problem today:** None intentionally
 
 ## Day 2.1 - Predict the indexes
@@ -130,4 +130,8 @@ Rules:
 - use `break` after finding the target
 - do not use a built-in search method
 
-Do not check the solution yet. Try all questions first.
+## Solution
+
+The completed Java solution is stored in:
+
+`day-002/Day2Solution.java`
