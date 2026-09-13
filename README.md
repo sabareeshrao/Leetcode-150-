@@ -2,11 +2,11 @@
 
 ## Current Progress
 
-**Day 001 / 300**  
+**Day 002 / 300**  
 **Current level:** Beginner  
 **Language:** Java  
 **Explanation style:** English only  
-**Next planned day:** Day 002
+**Next planned day:** Day 003
 
 This repository is the progress record for a gradual LeetCode 150 + FAANG interview preparation journey.
 
@@ -175,6 +175,12 @@ This same idea will later appear in searching, counting, maximum/minimum problem
 | Day | Topic | LeetCode Problem | Status |
 |---|---|---|---|
 | 001 | Java arrays, scanning, conditions, counting, search | None intentionally | COMPLETE |
+| 002 | Index-based traversal, target index, break | None intentionally | COMPLETE |
+
+## Day 2 Files
+
+- Tasks: `day-002/Day2Tasks.md`
+- Solution: `day-002/Day2Solution.java`
 
 ## Daily Git Rule
 
