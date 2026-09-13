@@ -6,7 +6,7 @@
 **Current level:** Beginner  
 **Language:** Java  
 **Explanation style:** English only  
-**Next planned day:** Day 003 solution, only when requested
+**Next planned day:** Day 004
 
 This repository is the progress record for a gradual LeetCode 150 + FAANG interview preparation journey.
 
@@ -22,7 +22,7 @@ We will not jump directly into a LeetCode problem until the required fundamental
 |---|---|---|---|
 | 001 | Java arrays, scanning, conditions, counting, search | None intentionally | COMPLETE |
 | 002 | Index-based traversal, target index, break | None intentionally | COMPLETE |
-| 003 | Largest value, smallest value, and their indexes | None intentionally | STARTED |
+| 003 | Largest value, smallest value, and their indexes | None intentionally | COMPLETE |
 
 ## Day Files
 
@@ -30,6 +30,7 @@ We will not jump directly into a LeetCode problem until the required fundamental
 - Day 2 tasks: `day-002/Day2Tasks.md`
 - Day 2 solution: `day-002/Day2Solution.java`
 - Day 3 tasks: `day-003/Day3Tasks.md`
+- Day 3 solution: `day-003/Day3Solution.java`
 
 ## Learning Workflow
 
